@@ -1,0 +1,29 @@
+# Define the riddles and answers
+riddles = [
+    {
+        "riddle": "1: Forwards I am heavy, backward I am not. What am I?",
+        "answer": "Ton"
+    },
+    {
+        "riddle": "2: What begins with T ends with T and has T in it?",
+        "answer": "Tea pot"
+    },
+    {
+        "riddle": "3: How much dirt is in a hole that measures 2 feet by 3 feet by 4 feet?",
+        "answer": "None"
+    }
+]
+
+# Loop through the riddles and ask for the user's answer
+score = 0
+for riddle in riddles:
+    print(riddle["riddle"])
+    response = input("Enter your answer: ")
+    if response.lower() == riddle["answer"]:
+        score += 1
+
+# Print the final score
+print("Good game!")
+print("The answer for 1 is Ton.")
+print("The answer for 2 is Tea pot.")
+print("The answer for 3 is None.")
